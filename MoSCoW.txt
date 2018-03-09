@@ -1,0 +1,22 @@
+Must Haves
+
+1. Facilitate an open and welcoming environment to every opinion and promote inclusion.
+2. A database and an API that will help the developers harvest data related to a poll.
+3. Comments on every step of the building process so that future developers can understand 
+   the structure of the code easily.
+
+
+Should Haves
+
+1. Modern design according to the latest trends of application user interface.
+2. A team of open-minded and respectful moderators that renew and provide content no matter 
+   what their beliefs are and retain a non-hostile environment.
+
+
+Could Haves
+
+1. Links to sources related to a poll open inside the application to make sure that the user
+   returns to the app after they read them.
+2. Custom-made button for voting inside a poll. 
+   
+Would Haves
