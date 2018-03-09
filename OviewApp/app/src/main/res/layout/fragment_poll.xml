@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The voting page. This is also the main page of Oview and the first one the user sees.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--We use a nested RelativeLayout because we want the text of the poll to appear on top of the image-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <!--This ImageView holds an image relevant to the poll-->
+        <ImageView
+            android:id="@+id/pollImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_centerInParent="true"/>
+
+        <!--This TextView holds the topic of the poll-->
+        <TextView
+            android:id="@+id/poll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Poll"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textSize="18sp"
+            android:shadowColor="#000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"/>
+    </RelativeLayout>
+
+    <!--We use a nested LinearLayout with horizontal orientation that is split in the two buttons equally-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <!--The red disagree button-->
+        <Button
+            android:id="@+id/disagree_button"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_green_dark" />
+
+        <!--The green agree button-->
+        <Button
+            android:id="@+id/agree_button"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toStartOf="@+id/disagree" />
+    </LinearLayout>
+
+    <!--This TextView holds the title of the Relevant Articles section-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relevant Articles"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--This TextView holds the URLs of the articles-->
+    <TextView
+        android:id="@+id/sources"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:text="TextView"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

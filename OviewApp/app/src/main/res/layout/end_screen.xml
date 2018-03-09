@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The end screen the users sees after they finish the voting-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--The TextView that holds the "thank you" text-->
+    <TextView
+        android:id="@+id/thank_you"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="Thank you for your time."
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="38sp" />
+
+    <!--The ImageView that holds the logo of Oview-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="0.4"
+        android:background="@android:color/background_light"
+        android:src="@drawable/logo"
+        android:paddingBottom="15dp"/>
+
+</LinearLayout>
