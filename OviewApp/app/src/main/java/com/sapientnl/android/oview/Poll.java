@@ -11,7 +11,7 @@ public class Poll {
     private String mTitle; //title of the poll
     private boolean mAnsweredAgree; //the opinion of the user,if given any
     private int mImageID; //an image related to the poll
-    private List<URL> mSources; //list of urls related to the poll
+    private List<String> mSources; //list of urls related to the poll
     //getters and setters for the aforementioned variables
     public Poll() {
         mId = UUID.randomUUID();
@@ -43,11 +43,11 @@ public class Poll {
         mImageID = image;
     }
 
-    public List<URL> getSources() {
+    public List<String> getSources() {
         return mSources;
     }
 
-    public void setSources(List<URL> sources) {
+    public void setSources(List<String> sources) {
         mSources = sources;
     }
 }

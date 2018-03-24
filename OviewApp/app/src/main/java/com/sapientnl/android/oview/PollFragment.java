@@ -49,9 +49,6 @@ public class PollFragment extends Fragment{
         mTitleTextView = (TextView) v.findViewById(R.id.poll_title);
         mTitleTextView.setText(mPoll.getTitle());
 
-        mPollImageView = (ImageView) v.findViewById(R.id.pollImageView);
-        mPollImageView.setImageResource(mPoll.getImage());
-
         mDisagreeButton = (Button) v.findViewById(R.id.disagree_button);
 		//If this button is clicked, set the variable mAnsweredAgree from the Poll class to false and call the function changeFragment()
         mDisagreeButton.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +70,7 @@ public class PollFragment extends Fragment{
         });
 
         mSources = (TextView) v.findViewById(R.id.sources);
-        mSources.setText(mPoll.getSources().toString());
+        mSources.setText(mPoll.getSources().toString().replaceAll("\\p{P}",""));
 
         return v;
     }
