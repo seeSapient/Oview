@@ -20,3 +20,6 @@ find more information about it inside its file.
 
 EndPage is just a temporary page to end the app so it doesn't crash
 when we vote all the polls of the list.
+
+There is also an alternative design that is cleaner and more fresh as a
+base for a different approach. It is on the alt-design branch.
